@@ -1,0 +1,28 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "An MVC excercise, using MySQL, Node, Express, Handlebars & custom ORM.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gloriousLoaf/burger.git"
+  },
+  "keywords": [
+    "MVC",
+    "ORM"
+  ],
+  "author": "David Metcalf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gloriousLoaf/burger/issues"
+  },
+  "homepage": "https://github.com/gloriousLoaf/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
+}
