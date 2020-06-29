@@ -1,1 +1,37 @@
-{{!-- Get to work! --}}
+<div class="row">
+
+    <div class="col-sm-4 text-center">
+        <h2>Burgers On Deck!</h2>
+        <ul>
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{ main devoured=true}}
+            {{/unless}}
+            {{/each}}
+        </ul>
+        <button class="btn btn-dark" type="submit">Devour!</button>
+    </div>
+
+    <div class="col-sm-4 d-flex flex-column align-items-center">
+        <h2>Add a Burger</h2>
+        <form class="create-form">
+            <div class="form-group input-group input-group-lg">
+                <input class="form-control mt-3 shadow-none" type="text" id="newBurger" name="name"
+                    placeholder="What's good?">
+            </div>
+        </form>
+        <button class="btn btn-dark mt-3" type="submit">Add Burger</button>
+    </div>
+
+    <div class="col-sm-4 text-center">
+        <h2>Burgers Devoured</h2>
+        <ul>
+            {{#each burgers}}
+            {{#if devoured}}
+            {{ main devoured=true}}
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+
+</div>
