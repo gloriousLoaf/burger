@@ -1,7 +1,7 @@
 // Dependencies
 const express = require(`express`);
-const router = express.Router();
 const burger = require(`../models/burger`);
+const router = express.Router();
 
 /* Routes */
 // GET
