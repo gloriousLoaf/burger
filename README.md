@@ -1,5 +1,5 @@
 
-# Burger Eater (Work In Progress!)
+# Burger Cravings
 An MVC exercise using MySQl, Node, Express, Handlebars & Custom ORM.
 
 ![GitHub language count](https://img.shields.io/github/languages/count/gloriousLoaf/burger)
@@ -12,19 +12,20 @@ An MVC exercise using MySQl, Node, Express, Handlebars & Custom ORM.
 * [License](#-license)
 * [Contributors](#-contributors)
 * [Questions](#-questions)
-* [YouTube](#-youtube)
 <p>&nbsp;</p>
 
 ## Description
-This is a restaurant app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, your app will display the burger on the left side of the page -- waiting to be devoured. Each burger in the waiting area also has a **Devour It!** button. When the user clicks it, the burger will move to the right side of the page. **More Details to Come!**
+This is a restaurant-inspired app that lets users input the names of burgers they'd like to eat. Whenever a user submits a burger's name, the app will display the burger on the left side of the page -- waiting to be devoured. Each burger in the waiting area also has a *Devour It* button. When the user clicks it, the burger will move to the right side of the page. All burgers will remain in the database, whether eaten or not.
 <p>&nbsp;</p>
 
 ## Installation
-Clone this repo to your local macine, navigate to the Burger folder and run ```nmp install``` to get the dependencies. This requires **MySQL** to run database.
+Clone this repo to your local machine, navigate to the Burger folder and run ```nmp install``` to get the dependencies. This requires knowledge of **MySQL** or other SQL database to run.
 <p>&nbsp;</p>
 
 ## Usage
-More details soon.
+**Running this app locally:** Get MySQL database running (connection.js is set to default 3306), and navigate to the **burger** directory in your command line. Run ```node server``` to connect. Navigate to **localhost:3000** in your browser and start cooking up some burgers. Figuratively, that is. If your machine can cook burgers, you should invest in a better cooling system for your processors.
+
+**Heroku Deployment:** Checkout [JawsDB](https://elements.heroku.com/addons/jawsdb) to set up your own hosted instance. Also give the app a try at my deployment on [Heroku](this will be a link in a few minutes).
 <p>&nbsp;</p>
 
 ---
@@ -45,9 +46,6 @@ Just myself, the author.
 
 <img src="https://github.com/gloriousLoaf.png" alt="GitHub Profile Pic" width="125" height="125">
 <p>&nbsp;</p>
-
-## YouTube
-**Coming Soon**
 
 ---
 
