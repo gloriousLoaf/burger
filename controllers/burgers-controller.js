@@ -4,8 +4,9 @@ const burger = require(`../models/burger`);
 const router = express.Router();
 
 /* Routes */
-// GET
+// GET burgers
 router.get(`/`, (req, res) => {
+    // Handlebars obj
     burger.all((data) => {
         const hbsObject = {
             burgers: data
@@ -15,14 +16,14 @@ router.get(`/`, (req, res) => {
     });
 });
 
-// POST
+// POST new burger
 router.post(`/api/burgers`, (req, res) => {
     burger.insert([`name`, `devoured`], [req.body.name, req.body.devoured], (result) => {
         res.json({ id: result.insertId });
     });
 });
 
-// PUT
+// PUT ie eat a burger
 router.put(`/api/burgers/:id`, function (req, res) {
     const condition = `id = ${req.params.id}`;
     console.log(`condition`, condition);

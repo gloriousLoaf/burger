@@ -1,17 +1,17 @@
 // Import MySQL Connection
 const connection = require(`./connection`);
 
-function qMarks(num) {
-    var arr = [];
-  
-    for (var i = 0; i < num; i++) {
+// Helper Functions
+// Get correct number of ? for query
+const qMarks = (num) => {
+    const arr = [];
+    for (let i = 0; i < num; i++) {
       arr.push(`?`);
-    }
-  
+    } 
     return arr.toString();
-  }
-
-function makeSql(ob) {
+};
+// set correct syntax for values like id=1
+const makeSql = (ob) =>{
     var arr = [];
     for (var key in ob) {
       var value = ob[key];
@@ -23,9 +23,9 @@ function makeSql(ob) {
       }
     }
     return arr.toString();
-  }
+};
 
-// Build ORM
+// ORM
 const orm = {
     // display data when GET route is hit
     selectAll: (table, cb) => {

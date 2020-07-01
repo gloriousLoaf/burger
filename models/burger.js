@@ -3,6 +3,7 @@ const orm = require(`../config/orm`);
 
 // Burger Modeler
 const burger = {
+    // use ORM methods to append and respond with callbacks
     all: (cb) => {
         orm.selectAll(`burgers`, (res) => {
             cb(res);

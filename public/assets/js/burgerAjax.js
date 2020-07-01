@@ -1,24 +1,9 @@
 // AJAX to database
 $(function () {
-
-    /* CANNOT get POST to work! :( */
-
+    // listener to call ajax & create new burger
     $(`.create-form`).on(`submit`, function (event) {
         event.preventDefault();
-        /* WITHOUT VALIDATION */
-        // let newBurger = {
-        //     name: $(`#newBurger`).val().trim(),
-        //     devoured: 0
-        // };
-        // $.ajax(`/api/burgers/`, {
-        //     type: `POST`,
-        //     data: newBurger
-        // }).then(function () {
-        //     console.log(`New tasty burger on deck!`);
-        //     location.reload();
-        // })
-
-        /* WITH VALIDATION */
+        // Change alert to Boostrap modal?
         if ($(`#newBurger`).val().trim() === ``) {
             alert(`Nothing to eat? Please type something.`);
             return false;
@@ -38,6 +23,7 @@ $(function () {
             })
         }
     })
+    // and to devour a burger
     $(`.devour`).on(`click`, function (event) {
         event.preventDefault();
         let id = $(this).data(`id`);
