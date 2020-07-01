@@ -1,5 +1,6 @@
 // AJAX to database
 $(function () {
+
     /* CANNOT get POST to work! :( */
 
     $(`.create-form`).on(`submit`, function (event) {
@@ -28,7 +29,7 @@ $(function () {
                 devoured: 0
             };
             console.log(newBurger);
-            $.ajax(`/api/burgers/`, {
+            $.ajax(`/api/burgers`, {
                 type: `POST`,
                 data: newBurger
             }).then(function () {
