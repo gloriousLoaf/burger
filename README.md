@@ -25,7 +25,7 @@ Clone this repo to your local machine, navigate to the Burger folder and run ```
 ## Usage
 **Running this app locally:** Get MySQL database running (connection.js is set to default 3306), and navigate to the **burger** directory in your command line. Run ```node server``` to connect. Navigate to **localhost:3000** in your browser and start cooking up some burgers. Figuratively, that is. If your machine can cook burgers, you should invest in a better cooling system for your processors.
 
-**Heroku Deployment:** Checkout [JawsDB](https://elements.heroku.com/addons/jawsdb) to set up your own hosted instance. Also give the app a try at my deployment on [Heroku](this will be a link in a few minutes).
+**Heroku Deployment:** Checkout [JawsDB](https://elements.heroku.com/addons/jawsdb) to set up your own hosted instance. Also give the app a try at my deployment on [Heroku](https://maple-whistler-67367.herokuapp.com/).
 <p>&nbsp;</p>
 
 ---
