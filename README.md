@@ -19,7 +19,7 @@ This is a restaurant-inspired app that lets users input the names of burgers the
 <p>&nbsp;</p>
 
 ## Installation
-Clone this repo to your local machine, navigate to the Burger folder and run ```nmp install``` to get the dependencies. This requires knowledge of **MySQL** or other SQL database to run.
+Clone this repo to your local machine, navigate to the Burger folder and run ```npm install``` to get the dependencies. This requires knowledge of **MySQL** or other SQL database to run.
 <p>&nbsp;</p>
 
 ## Usage
