@@ -1,6 +1,6 @@
 
 # Burger Cravings
-🍔 An MVC exercise using MySQl, Node, Express, Handlebars & Custom ORM.
+🍔 An MVC exercise using MySQl, Node, Express, Handlebars & Custom ORM!
 
 ![GitHub language count](https://img.shields.io/github/languages/count/gloriousLoaf/burger)
 ![GitHub top language](https://img.shields.io/github/languages/top/gloriousLoaf/burger)
